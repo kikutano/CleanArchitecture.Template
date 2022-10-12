@@ -1,0 +1,10 @@
+﻿CleanArchitecture.Application/obj
+CleanArchitecture.Common.Tests/obj
+CleanArchitecture.Contracts/obj
+CleanArchitecture.Domain/obj
+CleanArchitecture.Functional.Tests/obj
+CleanArchitecture.Infrastructure/obj
+CleanArchitecture.Template/bin
+CleanArchitecture.Template/obj
+.vs/CleanArchitecture.Template/FileContentIndex
+.vs
