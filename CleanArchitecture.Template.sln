@@ -3,23 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.WebApi", "CleanArchitecture.Template\CleanArchitecture.WebApi.csproj", "{CF122191-BD10-4B16-8AE1-2F687106B8E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.WebApi", "CleanArchitecture.Template\CleanArchitecture.WebApi.csproj", "{CF122191-BD10-4B16-8AE1-2F687106B8E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Domain", "CleanArchitecture.Domain\CleanArchitecture.Domain.csproj", "{68BA560B-F248-41A8-B0EF-F575D66EDF03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Domain", "CleanArchitecture.Domain\CleanArchitecture.Domain.csproj", "{68BA560B-F248-41A8-B0EF-F575D66EDF03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Contracts", "CleanArchitecture.Contracts\CleanArchitecture.Contracts.csproj", "{6A171D70-5BA1-48C8-B9B2-4B18C7C609F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Contracts", "CleanArchitecture.Contracts\CleanArchitecture.Contracts.csproj", "{6A171D70-5BA1-48C8-B9B2-4B18C7C609F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Application", "CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{AA2C032F-C636-4BAD-A10F-2AECA088BCBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Application", "CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{AA2C032F-C636-4BAD-A10F-2AECA088BCBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infrastructure", "CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj", "{CD2F5CFF-5FE1-45B1-9BBA-0AC639AA84D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Infrastructure", "CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj", "{CD2F5CFF-5FE1-45B1-9BBA-0AC639AA84D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{35AD488B-970A-40C3-9325-2E76AD239487}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AE97F0B7-D26E-4431-A199-BA6C59D8D5B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Common.Tests", "CleanArchitecture.Common.Tests\CleanArchitecture.Common.Tests.csproj", "{55893A60-5D2C-4EEA-8435-52EA7A17E0C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Common.Tests", "CleanArchitecture.Common.Tests\CleanArchitecture.Common.Tests.csproj", "{55893A60-5D2C-4EEA-8435-52EA7A17E0C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Functional.Tests", "CleanArchitecture.Functional.Tests\CleanArchitecture.Functional.Tests.csproj", "{05B06BCC-9E2B-402D-A6D6-D92BDB4C2206}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Functional.Tests", "CleanArchitecture.Functional.Tests\CleanArchitecture.Functional.Tests.csproj", "{05B06BCC-9E2B-402D-A6D6-D92BDB4C2206}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,3 +1,3 @@
 ﻿namespace CleanArchitecture.Domain.Common.Models;
-public interface IAggregateRoot : IAggregate {
+public interface IValueObject {
 }
