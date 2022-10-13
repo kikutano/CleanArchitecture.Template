@@ -12,8 +12,8 @@ public class Project : BaseEntity, IAggregateRoot {
     }
 
     public static ErrorOr<Project> Create( LimitedText name, Guid? id = null ) {
-        var project = new Project( 
-            name, 
+        var project = new Project(
+            name,
             id ?? Guid.NewGuid() );
 
         var errors = Validate( project );

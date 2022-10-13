@@ -8,3 +8,6 @@ CleanArchitecture.Template/bin
 CleanArchitecture.Template/obj
 .vs/CleanArchitecture.Template/FileContentIndex
 .vs
+/CleanArchitecture.Application/bin/Debug/net6.0
+/CleanArchitecture.Domain/bin/Debug/net6.0
+/CleanArchitecture.Infrastructure/bin/Debug/net6.0
