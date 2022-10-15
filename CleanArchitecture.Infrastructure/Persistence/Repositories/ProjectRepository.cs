@@ -15,10 +15,14 @@ public class ProjectRepository : IProjectRepository {
     }
 
     public IEnumerable<Project> GetAll() {
-        throw new NotImplementedException();
+        return _context.Projects.ToList();
     }
 
-    public Project GetById( Guid id ) {
-        throw new NotImplementedException();
+    public Project? GetById( Guid id ) {
+        var project = _context
+            .Projects
+            .FirstOrDefault( project => project.Id == id );
+
+        return project;
     }
 }

@@ -1,4 +1,6 @@
+using CleanArchitecture.Application;
 using CleanArchitecture.Infrastructure;
+using CleanArchitecture.WebApi;
 
 var builder = WebApplication.CreateBuilder( args );
 
@@ -7,7 +9,10 @@ var configuration = provider.GetService<IConfiguration>();
 
 builder.Services
     .AddAuthorization()
-    .AddInfrastructure( configuration );
+    .AddInfrastructure( configuration )
+    .AddInfrastructure( configuration )
+    .AddPresentation( configuration )
+    .AddApplication();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
