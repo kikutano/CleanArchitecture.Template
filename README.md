@@ -42,18 +42,39 @@ The ```CleanArchitecture.WebApi``` is the Layer where all the Api are defined. T
 - [**Mapster**](https://github.com/MapsterMapper/Mapster)
 
 # Automated Tests
-Something about automated test.
+I love to write test, I don't to want to test anything using my eyes because I'm lazy. I just want to automate everything I can and lets the computer say to me if something is wrong. I prefer an approach where I write the Functional Test that test the entire use case. I know this is not the purest approach, but if I need to write an Unit Test I do, but in the other case I prefer to write End-To-End Tests. 
 
 ## Common.Tests
+This layer define all the utils to create Server Snapshot to allow you to test your project in a very easy way. I written an [**ProjectsSnapshotExtension**](https://github.com/kikutano/CleanArchitecture.Template/blob/main/CleanArchitecture.Common.Tests/DatabaseSnapshot/ProjectsSnapshotExtension.cs) that allow you to create Projects inside the database.
+
+So you can create a snapshot in this way:
+
+```csharp
+Project project;
+MockServerFactory
+     .DbSnapshoter
+     .AddProject( out project, "new project 1" )
+     .AddProject( out project, "new project 2" )
+     .AddProject( out project, "new project 3" );
+```
+
+[**Here a complete Example**](https://github.com/kikutano/CleanArchitecture.Template/blob/main/CleanArchitecture.Functional.Tests/Projects/GetAll.cs).
+
 ## Functional.Tests
+For this purpose I written a [**MockServerFactory**](https://github.com/kikutano/CleanArchitecture.Template/blob/main/CleanArchitecture.Functional.Tests/Common/MockServerFactory.cs) that allow you to create an entire Mocked Server to execute the Api Calls directly inside your Test project. 
 
 # 📖 References:
 This is a list of online documents that I read to study DDD and Clean Architecture over the time. They are not necessary in C# language. 
 ##### Introductions:
-- [**An Introduction to Domain-Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro) - [khalilstemmler.com](https://khalilstemmler.com/)
+- [**An Introduction to Domain-Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro)
 
 #### Entities:
-- [**Understanding Domain Entities**](https://khalilstemmler.com/articles/typescript-domain-driven-design/entities/) - [khalilstemmler.com](https://khalilstemmler.com/)
+- [**Understanding Domain Entities**](https://khalilstemmler.com/articles/typescript-domain-driven-design/entities/)
+- [**Having the domain model separated from the persistence model**](https://enterprisecraftsmanship.com/posts/having-the-domain-model-separate-from-the-persistence-model/)
 
 #### Value Objects:
 - [**Nulls in Value Objects**](https://enterprisecraftsmanship.com/posts/nulls-in-value-objects/)
+
+#### Aggregates:
+- [**How to Design & Persist Aggregates**](https://khalilstemmler.com/articles/typescript-domain-driven-design/aggregate-design-persistence/)
+- [**What Are Aggregates In Domain-Driven Design?**](https://www.jamesmichaelhickey.com/domain-driven-design-aggregates/)
