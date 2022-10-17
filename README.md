@@ -1,3 +1,5 @@
+[![.NET](https://github.com/kikutano/CleanArchitecture.Template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kikutano/CleanArchitecture.Template/actions/workflows/dotnet.yml)
+
 # CleanArchitecture.Template
 **⚠️ This ReadMe is incomplete! ⚠️**
 
