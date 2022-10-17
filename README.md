@@ -7,6 +7,9 @@ This is an open source project with the purpose of implement a simple, but compl
 My goal is to improve this source code everytime I learn something new about **DDD** and **Clean Architecture** into my everyday job.
 So, please, feel free to submit your idea, tips, criticisms, improvements etc etc.
 
+# What this template do
+This is a simple implementation of a Task Manager. You can create Projects, insert tasks inside a Project, update the status of single task, retrive all tasks and project. Etc. etc.
+
 # Architecture
 This template organize the code and layers using the [**Clean Architecture**](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) principles and  [**Domain Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro/). Above you can find the explanations for every architecture layer.
 
