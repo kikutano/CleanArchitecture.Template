@@ -1,5 +1,5 @@
 # CleanArchitecture.Template
-**This ReadMe is imcomplete!**
+**⚠️ This ReadMe is incomplete! ⚠️**
 
 This is an open source project with the purpose of implement a simple, but complete, Backend Project template using [**Clean Architecture**](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and [**Domain Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro/) principles.
 My goal is to improve this source code everytime I learn something new about **DDD** and **Clean Architecture** into my everyday job.
@@ -22,7 +22,7 @@ Something about the architecture.
 ## WebApi
 
 ## External Dependencies
-- ErrorOr
+- [**ErrorOr**](https://github.com/amantinband/error-or)
 - MediatR
 - Swagger
 
