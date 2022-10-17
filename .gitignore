@@ -12,3 +12,5 @@ CleanArchitecture.Template/obj
 /CleanArchitecture.Domain/bin/Debug/net6.0
 /CleanArchitecture.Infrastructure/bin/Debug/net6.0
 /CleanArchitecture.Contracts/bin/Debug/net6.0
+/CleanArchitecture.Common.Tests/bin/Debug/net6.0
+/CleanArchitecture.Functional.Tests/bin/Debug/net6.0
