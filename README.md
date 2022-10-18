@@ -66,6 +66,9 @@ MockServerFactory
 ## Functional.Tests
 For this purpose I written a [**MockServerFactory**](https://github.com/kikutano/CleanArchitecture.Template/blob/main/CleanArchitecture.Functional.Tests/Common/MockServerFactory.cs) that allow you to create an entire Mocked Server to execute the Api Calls directly inside your Test project. 
 
+#### Functional Tests runs in sequence
+Test runs in sequence and not parallel, this to avoid some problem with the database access. [**Here to read more**](https://stackoverflow.com/questions/1408175/execute-unit-tests-serially-rather-than-in-parallel).
+
 # 📖 References:
 This is a list of online documents that I read to study DDD and Clean Architecture over the time. They are not necessary in C# language. 
 ##### Introductions:
