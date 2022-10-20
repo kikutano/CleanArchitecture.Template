@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Domain.Aggregates;
+﻿using CleanArchitecture.Domain.ProjectAggregates;
 using CleanArchitecture.Domain.ValueObjects;
 
 namespace CleanArchitecture.Common.Tests.DatabaseSnapshot;

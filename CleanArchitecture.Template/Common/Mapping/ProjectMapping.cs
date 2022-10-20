@@ -1,6 +1,6 @@
 ﻿using CleanArchitecture.Application.Projects.Common;
 using CleanArchitecture.Contracts.Projects;
-using CleanArchitecture.Domain.Aggregates;
+using CleanArchitecture.Domain.ProjectAggregates;
 using Mapster;
 
 namespace CleanArchitecture.WebApi.Common.Mapping;

@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Domain.Aggregates;
+﻿using CleanArchitecture.Domain.ProjectAggregates;
 using CleanArchitecture.Domain.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

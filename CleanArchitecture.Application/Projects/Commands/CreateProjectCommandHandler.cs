@@ -1,12 +1,12 @@
 ﻿using CleanArchitecture.Application.Common.Interfaces.Persistence;
 using CleanArchitecture.Application.Projects.Common;
-using CleanArchitecture.Domain.Aggregates;
+using CleanArchitecture.Domain.ProjectAggregates;
 using CleanArchitecture.Domain.ValueObjects;
 using ErrorOr;
 using MediatR;
 
 namespace CleanArchitecture.Application.Projects.Commands;
-internal class CreateProjectCommandHandler
+internal sealed class CreateProjectCommandHandler
     : IRequestHandler<CreateProjectCommand, ErrorOr<ProjectResult>> {
     private readonly IProjectRepository _projectRepository;
 

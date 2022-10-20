@@ -1,5 +1,6 @@
 ﻿using CleanArchitecture.Application.Common.Interfaces.Persistence;
-using CleanArchitecture.Domain.Aggregates;
+using CleanArchitecture.Domain.ProjectAggregates;
+using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitecture.Infrastructure.Persistence.Repositories;
 public class ProjectRepository : IProjectRepository {
@@ -11,11 +12,14 @@ public class ProjectRepository : IProjectRepository {
 
     public void Add( Project project ) {
         _context.Projects.Add( project );
-        _context.SaveChanges();
+        SaveChanges();
     }
 
     public IEnumerable<Project> GetAll() {
-        return _context.Projects.ToList();
+        return _context
+            .Projects
+            .AsNoTracking()
+            .ToList();
     }
 
     public Project? GetById( Guid id ) {
@@ -24,5 +28,14 @@ public class ProjectRepository : IProjectRepository {
             .FirstOrDefault( project => project.Id == id );
 
         return project;
+    }
+
+    public void Update( Project project ) {
+        _context.Projects.Update( project );
+        SaveChanges();
+    }
+
+    public void SaveChanges() {
+        _context.SaveChanges();
     }
 }

@@ -7,7 +7,7 @@ public class LimitedText : IValueObject {
     public string Value { get; }
 
     public const int MinLength = 3;
-    public const int MaxLength = 50;
+    public const int MaxLength = 100;
 
     protected LimitedText( string value ) {
         Value = value;
@@ -26,11 +26,11 @@ public class LimitedText : IValueObject {
     public static List<Error> Validate( LimitedText limitedText ) {
         var errors = new List<Error>();
         if ( limitedText is null ) {
-            errors.Add( Errors.LimitedText.InvalidLongText );
+            errors.Add( Errors.LimitedText.InvalidLimitedText );
         }
 
         if ( limitedText!.Value.Length is < MinLength or > MaxLength ) {
-            return new List<Error>() { Errors.LimitedText.InvalidLongText };
+            return new List<Error>() { Errors.LimitedText.InvalidLimitedText };
         }
 
         return errors;

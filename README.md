@@ -1,14 +1,23 @@
 [![.NET](https://github.com/kikutano/CleanArchitecture.Template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kikutano/CleanArchitecture.Template/actions/workflows/dotnet.yml)
 
 # CleanArchitecture.Template
-**⚠️ This ReadMe is incomplete! ⚠️**
 
 This is an open source project with the purpose of implement a simple, but complete, Backend Project template using [**Clean Architecture**](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and [**Domain Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro/) principles.
 My goal is to improve this source code everytime I learn something new about **DDD** and **Clean Architecture** into my everyday job.
 So, please, feel free to submit your idea, tips, criticisms, improvements etc etc.
 
-# What this template do
-This is a simple implementation of a Task Manager. You can create Projects, insert tasks inside a Project, update the status of single task, retrive all tasks and project. Etc. etc.
+## Project Description
+This is a simple project where an user can create a simple task manager. A user can:
+- Create a new project **(CRUD)**
+- Add Task to a project **(CRUD)**
+- Update the state of a task
+
+**Not of all use cases will be implemented!** The purpose of this project is to implement the different **DDD**
+and **Clean Architecture** Tools and Scenario. Not to give a complete project.
+
+## Project Roadmap
+Please see the [**Project Page**](https://github.com/users/kikutano/projects/2/views/1) to monitor the progresses and future implementations for this project.
+User the [**Issue Page**](https://github.com/kikutano/CleanArchitecture.Template/issues) to submit corrections, suggestions, bugs and questions.
 
 # Architecture
 This template organize the code and layers using the [**Clean Architecture**](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) principles and  [**Domain Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro/). Above you can find the explanations for every architecture layer.
@@ -71,7 +80,7 @@ Test runs in sequence and not parallel, this to avoid some problem with the data
 
 # 📖 References:
 This is a list of online documents that I read to study DDD and Clean Architecture over the time. They are not necessary in C# language. 
-##### Introductions:
+#### Introductions:
 - [**An Introduction to Domain-Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro)
 
 #### Entities:

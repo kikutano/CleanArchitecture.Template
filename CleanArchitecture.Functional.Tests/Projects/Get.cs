@@ -1,6 +1,6 @@
 ﻿using CleanArchitecture.Common.Tests.DatabaseSnapshot;
 using CleanArchitecture.Contracts.Projects;
-using CleanArchitecture.Domain.Aggregates;
+using CleanArchitecture.Domain.ProjectAggregates;
 using CleanArchitecture.Functional.Tests.Common;
 using CleanArchitecture.WebApi;
 using System.Net;

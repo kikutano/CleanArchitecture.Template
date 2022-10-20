@@ -13,9 +13,11 @@
 
   <ItemGroup>
     <Folder Include="Projects\Queries\" />
+    <Folder Include="TaskItems\Queries\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
     <PackageReference Include="MediatR" Version="11.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>

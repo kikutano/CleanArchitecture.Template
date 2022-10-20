@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Entities\" />
-    <Folder Include="Events\" />
+    <Folder Include="ProjectAggregates\Events\" />
   </ItemGroup>
 
   <ItemGroup>
