@@ -17,7 +17,7 @@ and **Clean Architecture** Tools and Scenario. Not to give a complete project.
 
 ## Project Roadmap
 Please see the [**Project Page**](https://github.com/users/kikutano/projects/2/views/1) to monitor the progresses and future implementations for this project.
-User the [**Issue Page**](https://github.com/kikutano/CleanArchitecture.Template/issues) to submit corrections, suggestions, bugs and questions.
+Use the [**Issue Page**](https://github.com/kikutano/CleanArchitecture.Template/issues) to submit corrections, suggestions, bugs and questions.
 
 # Architecture
 This template organize the code and layers using the [**Clean Architecture**](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) principles and  [**Domain Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro/). Above you can find the explanations for every architecture layer.
