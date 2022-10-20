@@ -1,6 +1,6 @@
 [![.NET](https://github.com/kikutano/CleanArchitecture.Template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kikutano/CleanArchitecture.Template/actions/workflows/dotnet.yml)
 
-# CleanArchitecture.Template
+# 🟥 CleanArchitecture.Template
 
 This is an open source project with the purpose of implement a simple, but complete, Backend Project template using [**Clean Architecture**](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and [**Domain Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro/) principles.
 My goal is to improve this source code everytime I learn something new about **DDD** and **Clean Architecture** into my everyday job.
@@ -19,7 +19,7 @@ and **Clean Architecture** Tools and Scenario. Not to give a complete project.
 Please see the [**Project Page**](https://github.com/users/kikutano/projects/2/views/1) to monitor the progresses and future implementations for this project.
 Use the [**Issue Page**](https://github.com/kikutano/CleanArchitecture.Template/issues) to submit corrections, suggestions, bugs and questions.
 
-# Architecture
+# 🗃 Architecture
 This template organize the code and layers using the [**Clean Architecture**](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) principles and  [**Domain Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro/). Above you can find the explanations for every architecture layer.
 
 ## Domain
@@ -53,7 +53,7 @@ The ```CleanArchitecture.WebApi``` is the Layer where all the Api are defined. T
 - [**Swagger**](https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-6.0)
 - [**Mapster**](https://github.com/MapsterMapper/Mapster)
 
-# Automated Tests
+# 🧪 Automated Tests
 I love to write test, I don't to want to test anything using my eyes because I'm lazy. I just want to automate everything I can and lets the computer say to me if something is wrong. I prefer an approach where I write the Functional Test that test the entire use case. I know this is not the purest approach, but if I need to write an Unit Test I do, but in the other case I prefer to write End-To-End Tests. 
 
 ## Common.Tests
