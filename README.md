@@ -1,6 +1,6 @@
 [![.NET](https://github.com/kikutano/CleanArchitecture.Template/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kikutano/CleanArchitecture.Template/actions/workflows/dotnet.yml)
 
-# 🟥 CleanArchitecture.Template
+# 👨🏽‍💻 CleanArchitecture.Template
 
 This is an open source project with the purpose of implement a simple, but complete, Backend Project template using [**Clean Architecture**](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and [**Domain Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro/) principles.
 My goal is to improve this source code everytime I learn something new about **DDD** and **Clean Architecture** into my everyday job.
