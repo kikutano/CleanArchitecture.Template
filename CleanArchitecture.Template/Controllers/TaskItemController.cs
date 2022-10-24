@@ -62,6 +62,6 @@ public class TaskItemController : ApiController {
         if ( project is null )
             return Problem( Errors.Project.NotFound( projectId ) );
 
-        return Ok( _mapper.Map<ProjectsDto>( project.TaskItems ) );
+        return Ok( _mapper.Map<TaskItemsDto>( project.TaskItems ) );
     }
 }

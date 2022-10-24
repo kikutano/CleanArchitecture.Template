@@ -1,5 +1,6 @@
 ﻿using CleanArchitecture.Application.TaskItems.Common;
 using CleanArchitecture.Contracts.Projects.TaskItems;
+using CleanArchitecture.Domain.ProjectAggregates.Entities;
 using Mapster;
 
 namespace CleanArchitecture.WebApi.Common.Mapping;
@@ -10,7 +11,7 @@ public class TaskItemMapping : IRegister {
             .Map( dest => dest, src => src.TaskItem )
             .Map( dest => dest.Description, src => src.TaskItem.Description );
 
-        //config.NewConfig<IEnumerable<Project>, ProjectsDto>()
-        //    .Map( dest => dest.Projects, src => src );
+        config.NewConfig<IEnumerable<TaskItem>, TaskItemsDto>()
+            .Map( dest => dest.TaskItems, src => src );
     }
 }

@@ -7,22 +7,27 @@ public class TaskItem : BaseEntity {
     public LimitedText Title { get; private set; }
     public DescriptionText? Description { get; private set; }
     public TaskState State { get; private set; } = TaskState.ToDo;
+    public virtual Guid ProjectId { get; private set; }
 
     protected TaskItem(
         Guid id,
+        Guid projectId,
         LimitedText title,
         DescriptionText? description ) : base( id ) {
         Title = title;
         Description = description;
+        ProjectId = projectId;
     }
 
     public static ErrorOr<TaskItem> Create(
+        Guid projectId,
         LimitedText title,
         DescriptionText? description,
         Guid? id = null ) {
 
         var taskItem = new TaskItem(
             id ?? Guid.NewGuid(),
+            projectId,
             title,
             description );
 

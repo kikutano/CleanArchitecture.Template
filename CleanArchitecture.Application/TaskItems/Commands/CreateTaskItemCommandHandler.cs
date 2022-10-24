@@ -23,15 +23,12 @@ internal sealed class CreateTaskItemCommandHandler
         if ( project is null )
             return Errors.Project.NotFound( request.ProjectId );
 
-        var title = LimitedText
-            .Create(
-                request.Title );
+        var title = LimitedText.Create( request.Title );
 
         if ( title.IsError )
             return title.Errors;
 
         DescriptionText? description = null;
-
         if ( !string.IsNullOrEmpty( request.Description ) ) {
             var errorOrDescription = DescriptionText.Create( request.Description );
 
@@ -41,10 +38,7 @@ internal sealed class CreateTaskItemCommandHandler
             description = errorOrDescription.Value;
         }
 
-        var taskItem = TaskItem
-            .Create(
-                title.Value,
-                description );
+        var taskItem = TaskItem.Create( project.Id, title.Value, description );
 
         _projectRepository.Update( project );
         return await Task.FromResult( new TaskItemResult( taskItem.Value ) );

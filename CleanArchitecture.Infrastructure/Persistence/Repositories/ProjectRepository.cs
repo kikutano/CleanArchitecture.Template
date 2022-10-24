@@ -25,6 +25,7 @@ public class ProjectRepository : IProjectRepository {
     public Project? GetById( Guid id ) {
         var project = _context
             .Projects
+            .Include( project => project.TaskItems )
             .FirstOrDefault( project => project.Id == id );
 
         return project;
