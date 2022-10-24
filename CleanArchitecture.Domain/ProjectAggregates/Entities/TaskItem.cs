@@ -10,10 +10,9 @@ public class TaskItem : BaseEntity {
     public virtual Guid ProjectId { get; private set; }
 
     protected TaskItem(
-        Guid id,
         Guid projectId,
         LimitedText title,
-        DescriptionText? description ) : base( id ) {
+        DescriptionText? description ) {
         Title = title;
         Description = description;
         ProjectId = projectId;
@@ -22,11 +21,9 @@ public class TaskItem : BaseEntity {
     public static ErrorOr<TaskItem> Create(
         Guid projectId,
         LimitedText title,
-        DescriptionText? description,
-        Guid? id = null ) {
+        DescriptionText? description ) {
 
         var taskItem = new TaskItem(
-            id ?? Guid.NewGuid(),
             projectId,
             title,
             description );

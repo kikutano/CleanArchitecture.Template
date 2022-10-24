@@ -40,6 +40,7 @@ internal sealed class CreateTaskItemCommandHandler
 
         var taskItem = TaskItem.Create( project.Id, title.Value, description );
 
+        project.AddTask( taskItem.Value );
         _projectRepository.Update( project );
         return await Task.FromResult( new TaskItemResult( taskItem.Value ) );
     }

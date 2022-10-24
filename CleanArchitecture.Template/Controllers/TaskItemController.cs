@@ -1,6 +1,5 @@
 ﻿using CleanArchitecture.Application.Common.Interfaces.Persistence;
 using CleanArchitecture.Application.TaskItems.Commands;
-using CleanArchitecture.Contracts.Projects;
 using CleanArchitecture.Contracts.Projects.TaskItems;
 using CleanArchitecture.Domain.ProjectAggregates.Errors;
 using ErrorOr;

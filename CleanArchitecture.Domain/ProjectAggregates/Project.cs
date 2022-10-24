@@ -11,15 +11,12 @@ public class Project : BaseEntity, IAggregateRoot {
         => _taskItems.AsReadOnly();
     private readonly List<TaskItem> _taskItems = new();
 
-    protected Project( LimitedText name, Guid id ) : base( id ) {
+    protected Project( LimitedText name ) {
         Name = name;
     }
 
-    public static ErrorOr<Project> Create( LimitedText name, Guid? id = null ) {
-        var project = new Project(
-            name,
-            id ?? Guid.NewGuid() );
-
+    public static ErrorOr<Project> Create( LimitedText name ) {
+        var project = new Project( name );
         var errors = Validate( project );
 
         if ( errors.Any() )

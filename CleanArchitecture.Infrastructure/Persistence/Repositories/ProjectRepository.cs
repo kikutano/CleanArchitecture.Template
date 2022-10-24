@@ -32,8 +32,14 @@ public class ProjectRepository : IProjectRepository {
     }
 
     public void Update( Project project ) {
-        _context.Projects.Update( project );
-        SaveChanges();
+        try {
+            _context.Projects.Update( project );
+            SaveChanges();
+        }
+        catch ( Exception e ) {
+            int a = 0;
+        }
+       
     }
 
     public void SaveChanges() {
