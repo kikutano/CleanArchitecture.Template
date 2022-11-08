@@ -15,7 +15,7 @@ This is a simple project where an user can create a simple task manager. A user 
 **Not of all use cases will be implemented!** The purpose of this project is to implement the different **DDD**
 and **Clean Architecture** Tools and Scenario. Not to give a complete project.
 
-## Project Roadmap
+# 📝 Roadmap and ToDos
 Please see the [**Project Page**](https://github.com/users/kikutano/projects/2/views/1) to monitor the progresses and future implementations for this project.
 Use the [**Issue Page**](https://github.com/kikutano/CleanArchitecture.Template/issues) to submit corrections, suggestions, bugs and questions.
 
