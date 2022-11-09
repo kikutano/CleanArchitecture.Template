@@ -79,17 +79,4 @@ For this purpose I written a [**MockServerFactory**](https://github.com/kikutano
 Test runs in sequence and not parallel, this to avoid some problem with the database access. [**Here to read more**](https://stackoverflow.com/questions/1408175/execute-unit-tests-serially-rather-than-in-parallel).
 
 # 📖 References:
-This is a list of online documents that I read to study DDD and Clean Architecture over the time. They are not necessary in C# language. 
-#### Introductions:
-- [**An Introduction to Domain-Driven Design**](https://khalilstemmler.com/articles/domain-driven-design-intro)
-
-#### Entities:
-- [**Understanding Domain Entities**](https://khalilstemmler.com/articles/typescript-domain-driven-design/entities/)
-- [**Having the domain model separated from the persistence model**](https://enterprisecraftsmanship.com/posts/having-the-domain-model-separate-from-the-persistence-model/)
-
-#### Value Objects:
-- [**Nulls in Value Objects**](https://enterprisecraftsmanship.com/posts/nulls-in-value-objects/)
-
-#### Aggregates:
-- [**How to Design & Persist Aggregates**](https://khalilstemmler.com/articles/typescript-domain-driven-design/aggregate-design-persistence/)
-- [**What Are Aggregates In Domain-Driven Design?**](https://www.jamesmichaelhickey.com/domain-driven-design-aggregates/)
+I created a Google Drive Document [**here**](https://docs.google.com/document/d/10Ov8rARROLX86sz9ilU3XI_azbhVktp_tl1JfdqM3Ws/edit?usp=sharing) where I put all the links to the interesting articles, videos, books that I use to learn more about DDD and more. 
