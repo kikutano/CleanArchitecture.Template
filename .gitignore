@@ -20,3 +20,4 @@ CleanArchitecture.Template/obj
 /CleanArchitecture.Functional.Tests/bin/Debug/net7.0
 /CleanArchitecture.Application/bin/Debug/net7.0
 /CleanArchitecture.Infrastructure/bin/Debug/net7.0
+.vscode
